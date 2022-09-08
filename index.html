@@ -1,0 +1,58 @@
+<html>
+ <head>
+  <title>Nikos Website</title>
+
+  <script type="text/javascript">
+function meinButton_Click(e)
+{
+ var meinDiv = document.getElementById("meindiv");
+ meinDiv.className = "dynamisches-div";
+ meinDiv.innerHTML = "Hallo!";
+ return false;
+}
+  </script>
+
+  <style type="text/css">
+* 
+{
+ font-family: Open Sans, Tahoma, Verdana, Arial, Sans Serif;
+ font-size: 11px;
+}
+
+h1
+{
+ font-size: 24px;
+ font-weight: bold;
+}
+
+p
+{
+ display: block;
+ padding: 10px;
+ border: solid 1px #c0c0c0;
+ margin: 5px;
+}
+
+.dynamisches-div
+{
+ display: block;
+ margin: 5px;
+ padding: 10px;
+}
+
+
+  </style>
+ </head>
+ <body>
+  <h1>Nikos Website</h1>
+  <p>
+   Dies ist eine Test-Website.
+  </p>
+  <div class="dynamisches-div">
+   <div id="meindiv" />
+   <button id="meinbutton" onclick="return meinButton_Click(this);">
+    Klick mich!
+   </button>
+  </div>
+ </body>
+</html>
