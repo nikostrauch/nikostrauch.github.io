@@ -11,5 +11,7 @@
       <input type="text" id="subject">
       <p>text</p>
       <textarea id="text"></textarea>
+      <br >
+      <input type="submit" value="Submit">
   </body>
 </html>
